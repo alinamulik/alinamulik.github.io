@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<head>
+   <title>Это морковь!</title>
+
+</head>
+<br><br><br>
+
+<style>
+.box{
+ position: relative;
+ overflow: hidden;
+ box-shadow: 0 0 5px #555;
+}
+.box img{
+ width: 100%;
+ height: auto;
+ transition: all 0.5s ease 0s;
+}
+.box:hover img{
+ opacity: 0.3;
+}
+.box .boxContent{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ padding: 40px;
+ background: rgba(0, 0, 0, 0.50);
+ border: 4px solid rgba(255, 255, 255, 0.10);
+ -webkit-transform: rotate(90deg);
+ transform: rotate(90deg);
+ -webkit-transform-origin: 0 0;
+ transform-origin: 0 0;
+ z-index: 1;
+ transition: all 0.5s ease 0s;
+}
+.box:hover .boxContent{
+ -webkit-transform: rotate(0);
+ transform: rotate(0);
+ -webkit-transform-origin: 100% 100%;
+ transform-origin: 100% 100%;
+}
+.box .title{
+ display: inline-block;
+ font-size: 30px;
+ color: #fff;
+ line-height: 45px;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ margin: 0;
+}
+.box .post{
+ display: block;
+ font-size: 15px;
+ color: #fff;
+ text-transform: capitalize;
+ padding: 8px 0 15px;
+}
+@media only screen and (max-width: 990px){
+ .box{ margin-bottom: 20px; }
+}
+</style>
+
+<div class="container">
+<div class="row">
+
+ <div class="col-md-4 col-sm-6">
+ <div class="box">
+ <img src="C:\Users\79040\Pictures\0dc84b1a8d72f505f2226decbe394585.jpg">
+ <div class="boxContent">
+ <h3 class="title">Единорог</h3>
+ <span class="post">270000₽ </span>
+ </div>
+ </div>
+ <p>Единорог - это конь с рогом. Кстати, а кобыла может быть единорогом? Хз.
+      Единорогов очень любят девочки (наверное, потому что по легенде укротить его могла только девственница). Ну и
+      вообще, в поп-культуре сейчас снова единорожий пик. 
+      Так что будьте модными, заведите единорога.
+      </p>
+ </div>
+ 
+ <div class="col-md-4 col-sm-6">
+ <div class="box">
+ <img src="C:\Users\79040\Pictures\fantastika-drakon-krylya-roga.jpg">
+ <div class="boxContent">
+ <h3 class="title">Дракон</h3>
+ <span class="post">400000₽</span>
+ </div>
+ </div>
+ <p>Дракон - тоже неплохое приобретение. На драконе можно полетать. Если вы подружитесь с ним и сможете усидеть верхом
+      - поздравляю, вам не нужно покупать автомобиль (и сдавать на права вроде как тоже не надо). Правила ПДД смотреть в
+      мультфильме "Как приручить дракона". 
+      И да, драконов любят не только девочки.
+      </p>
+ </div>
+
+ <div class="col-md-4 col-sm-6">
+ <div class="box">
+ <img src="C:\Users\79040\Pictures\йети.jpg">
+ <div class="boxContent">
+ <h3 class="title">Йети</h3>
+ <span class="post">175000₽</span>
+ </div>
+ </div>
+ <p>Снежный человек, он же йети. Одичавший (или никогда до этого
+      неокультуренный) дядя, похожий на большого белого шимпанзе. 
+         Будет ласков, если кормить и держать не в клетке.
+      Поможет защитить свою жизнь вечером в Сормово.
+       В общем, не очень симпатичный, но зато особо практичный домашний
+      любимец.
+      </p>
+ </div>
+
+</div><!-- ./row -->
+</div><!-- ./container -->
